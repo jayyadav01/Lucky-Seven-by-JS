@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lucky seven</title>
+</head>
+<body>
+        <script>
+            let arr = [3,6,8,5,1,6,0,5,3,6,8,4,3,2];
+
+            let lucky = (arr) => {
+                if(arr.length>2)
+                {
+                    for(let i=0; i<arr.length; i++)
+                    {
+                        if((arr[i] + arr[i+1] + arr[i+2]) ==7)
+                        {
+                            console.log(true);
+                            break;
+                        }
+                        else if(i == arr.length-1)
+                        {
+                            console.log(false);
+                        }
+                    }
+                }
+            }
+
+            lucky(arr);
+        </script>
+</body>
+</html>
